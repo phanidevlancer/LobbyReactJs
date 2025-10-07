@@ -8,9 +8,9 @@ import howToPlayImage from '../../../assets/frame-1.png';
 import dailyBonusImage from '../../../assets/group-282.png';
 import supportImage from '../../../assets/trust.png';
 import leaderboardIcon from '../../../assets/icon.png';
-import leaderboardGraphic from '../../../assets/image-33.png';
+import leaderboardGraphic from '../../../assets/image-35.png';
 import dailyMissionGraphic from '../../../assets/image-34.png';
-import currentStreakGraphic from '../../../assets/image-35.png';
+import currentStreakGraphic from '../../../assets/image-33.png';
 import leaderboardAvatar from '../../../assets/lb.png';
 
 const LobbyPage = () => {
