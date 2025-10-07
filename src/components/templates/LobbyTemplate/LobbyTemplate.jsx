@@ -47,6 +47,7 @@ const LobbyTemplate = ({
       style={{
         flex: 1,
         overflowY: 'auto',
+        overflowX: 'hidden',
         padding: '24px',
         paddingBottom: '140px',
         display: 'flex',
