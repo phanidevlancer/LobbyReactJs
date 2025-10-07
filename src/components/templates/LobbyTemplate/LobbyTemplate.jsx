@@ -29,7 +29,6 @@ const LobbyTemplate = ({
   <div
     style={{
       width: '100%',
-      maxWidth: '420px',
       height: '100vh',
       maxHeight: '100vh',
       position: 'relative',
@@ -38,7 +37,6 @@ const LobbyTemplate = ({
       overflow: 'hidden',
       border: '1px solid rgba(148, 163, 184, 0.1)',
       boxShadow: '0 28px 80px rgba(8, 47, 73, 0.55)',
-      margin: '24px 16px',
       display: 'flex',
       flexDirection: 'column',
       overflowY: 'hidden',
