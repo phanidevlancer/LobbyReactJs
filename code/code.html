@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Poker Game Lobby</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+        .material-icons {
+            font-size: inherit;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#14b8a6", // Teal-500 as an example primary color
+                        "background-light": "#f3f4f6", // Gray-100
+                        "background-dark": "#0a192f", // A custom dark blue
+                        "card-dark": "#1e293b", // Slate-800
+                        "card-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="max-w-md mx-auto min-h-screen bg-background-light dark:bg-background-dark">
+<header class="p-4 flex justify-between items-center bg-card-light dark:bg-card-dark/50 backdrop-blur-sm sticky top-0 z-50">
+<div class="flex items-center space-x-3">
+<img alt="Player avatar" class="w-12 h-12 rounded-full border-2 border-amber-400" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrhkhrbEDs8C5OU1PPVwG-zijW-j1amYi-u0cM4PB7sBUqkWo4QLdqaBeH3Q4I12GYq7PNMxNBheXkMpmAFkJCa1rTgLc2bj5k9ukZcvY4rMC1Arr2MCwA93hbFScs3cG9DJJW-0bf_kyT0l7OHSxWRViKz8yXQtqGkfYOJrUzjgegm91u_sgSvpUyCoeXjKCTetuFzI0Zu_a55X8xOLZpsFWJSv5R50aUMJDByK750ghVV9NssSE5MBAztoCWO9j6_q2mHueTlruW"/>
+<div>
+<h1 class="font-bold text-lg text-gray-900 dark:text-white">Maxveeru19</h1>
+<p class="text-sm text-gray-500 dark:text-gray-400">Pokerace (18)</p>
+</div>
+</div>
+<div class="flex items-center space-x-2 bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-1.5">
+<span class="font-bold text-yellow-500">10,00,000</span>
+<button class="bg-green-500 text-white w-6 h-6 rounded-full flex items-center justify-center">
+<span class="material-icons text-base">add</span>
+</button>
+</div>
+</header>
+<main class="p-4 space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<div class="relative rounded-lg overflow-hidden h-28">
+<img alt="Casino banner" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzhQFhgF14FbtfvEYnbQoAlGtrYB5qvUNKrt_ue_qtoXurJE_9m7J7hTTNcimXDqPmEh0E4qk_AC-BLIyNUFpgvfB6-OSsUEqVa3x8fjh5SXXhm59Ep4mm1VH7ete-x4z9EYFH0NDEP81DiVK3NWrbvbHNWVc_mRzDVPCbpdMQLvTmXsL5tL-2Wd1z1XzsrmE7P2RWh9vSXb5Kcp5cBEG69abORBy0MfV5gg6Wca_pJOiMbnMmZXHk7YgnHnrBhHDrFSQi6Xe292Zp"/>
+<div class="absolute inset-0 bg-black/40 p-3 flex flex-col justify-end">
+<h2 class="text-white font-bold text-sm">Experience</h2>
+<h3 class="text-white font-extrabold text-2xl">CASINO</h3>
+</div>
+</div>
+<div class="relative rounded-lg overflow-hidden h-28">
+<img alt="Astrology banner" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAfv9c1mhoHv3PnbCWnxZgREm4KPQr7mJniNxV_QDI36Uzl1LTEwFBnfN0PUguEyJvOMGvswbbwdCqeMtlsGaJOuIDd6KBAfx7K8zBRZ532JM68vapLf2DqhI1YSgxUq4eDh-we9cnazizFjHJwsKvQiktZRo3WzCxJMBC8OMEQqOQpHmGYXIlpbloSYNpKjzYF77U90r05vZkDG7_fGs8275xNAN--kFPV6Jr6pAL6Wq25SR_MOBCpuehm19ReID1QHN42lrDEIjp"/>
+<div class="absolute inset-0 bg-cyan-600/60 p-3 flex flex-col justify-center items-center text-center">
+<h2 class="text-white font-semibold text-xs">Discover</h2>
+<h3 class="text-white font-extrabold text-2xl">ASTROLOGY</h3>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-card-light dark:bg-card-dark rounded-lg h-28 flex flex-col items-center justify-center space-y-2">
+<span class="material-icons text-4xl text-gray-400 dark:text-gray-500">image</span>
+<span class="font-semibold text-gray-700 dark:text-gray-300">NLH</span>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-lg h-28 flex flex-col items-center justify-center space-y-2">
+<span class="material-icons text-4xl text-gray-400 dark:text-gray-500">image</span>
+<span class="font-semibold text-gray-700 dark:text-gray-300">Fast NLH</span>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-lg h-28 flex flex-col items-center justify-center space-y-2">
+<span class="material-icons text-4xl text-gray-400 dark:text-gray-500">image</span>
+<span class="font-semibold text-gray-700 dark:text-gray-300">PLO</span>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-lg h-28 flex flex-col items-center justify-center space-y-2">
+<span class="material-icons text-4xl text-gray-400 dark:text-gray-500">image</span>
+<span class="font-semibold text-gray-700 dark:text-gray-300">Tournaments</span>
+</div>
+</div>
+<button class="w-full bg-card-light dark:bg-card-dark rounded-lg py-3 flex items-center justify-center space-x-2">
+<span class="material-icons text-gray-400 dark:text-gray-500">image</span>
+<span class="font-bold text-gray-700 dark:text-gray-300">Private Table</span>
+</button>
+<div class="flex justify-around text-center py-4">
+<div>
+<div class="w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-1">
+<span class="material-icons text-white text-3xl">local_fire_department</span>
+</div>
+<p class="font-semibold text-gray-900 dark:text-white">Current Streak</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Level 42</p>
+</div>
+<div>
+<div class="w-14 h-14 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-1">
+<span class="material-icons text-white text-3xl">track_changes</span>
+</div>
+<p class="font-semibold text-gray-900 dark:text-white">Daily Missions</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Play 3 Hands</p>
+</div>
+<div>
+<div class="w-14 h-14 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-1">
+<span class="material-icons text-white text-3xl">groups</span>
+</div>
+<p class="font-semibold text-gray-900 dark:text-white">Leaderboard</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Rank 12</p>
+</div>
+</div>
+<div class="bg-cover bg-center rounded-lg p-4 flex flex-col items-center text-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoOepcXSI-iidgZTdbhafN7bB8T7HBqoTXLdpFsVrRpFBgNgAPxg_J3hbRTZ4Vmj8Fw27xYIjC5xNhq6IMFI2CMQM49c0ryRj5cD4w69TJWVd0fTNp6evreYXOmivR5g5rV2ne8g_vOdixkeG3zQPxyx4RY6nqTCBGLP2r3PB_JrnasmUDYzXwBowsRRApYChnBb3ANm_Arzlns34BAllT7Wv5ANZ_x9A7W4bkIBYNRaDka6fL8-rB6hMb7aIxc3DsNLhYEFZUT_N-')">
+<div class="bg-black/50 p-4 rounded-lg">
+<h2 class="text-3xl font-extrabold text-yellow-400">POKER STORE</h2>
+<p class="text-white mt-1">Get chips, themes &amp; cool items</p>
+<button class="mt-3 bg-green-500 text-white font-bold py-2 px-6 rounded-lg">Enter Store</button>
+</div>
+</div>
+<div class="relative bg-gradient-to-r from-teal-800 to-cyan-900 rounded-lg p-4 flex items-center justify-between overflow-hidden">
+<div class="flex items-center space-x-3 z-10">
+<div class="bg-yellow-400 text-teal-900 p-2 rounded-lg">
+<h3 class="text-lg font-bold">DAILY</h3>
+<h4 class="text-2xl font-black">BONUS</h4>
+</div>
+<div>
+<p class="text-white font-bold text-xs">GET</p>
+<p class="text-yellow-400 font-extrabold text-4xl">5,000</p>
+<p class="text-white text-xs">REDEEM NOW</p>
+</div>
+</div>
+<div class="z-10">
+<p class="text-white text-sm text-right">on your<br/>next purchase</p>
+</div>
+<div class="absolute -right-8 -bottom-8 w-32 h-32 bg-cyan-500/20 rounded-full"></div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white"><span class="text-yellow-400">W</span> Top Players</h3>
+<a class="text-sm text-green-500 font-semibold flex items-center" href="#">
+                        View Full Leaderboard
+                        <span class="material-icons text-lg">chevron_right</span>
+</a>
+</div>
+<div class="space-y-2">
+<div class="bg-card-light dark:bg-card-dark p-2 rounded-lg flex items-center space-x-3">
+<div class="relative">
+<img alt="PokerKing_77 avatar" class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB--bwi79uJ_HEMCa4g_rwAx6ABHcRUZk6nUUn09GdtwDfIOC9r8pYdXMhp-c8_aDEAvS_NLogl2vLIdzdzxwlIvXcs-ygChyGr369a2XvDCLMtSaBCXZQ2SMVekQGltlH_urBDQ2ODkmRlZyYL6XzpVQENFyBT4ZoiAMWm6u2W31IrmXz91wbJbWJzUlJ96JsbroPJEAUhoZlKQiTZw0VAauCSNEufiHYzYpEQbaueWnep59bhedsASx4VRrjVKxS6hPU7M_NhVPWt"/>
+<span class="absolute -top-1 -left-1 bg-amber-400 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-card-light dark:border-card-dark">1</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-gray-900 dark:text-white">PokerKing_77</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Win Rate: 89%</p>
+</div>
+<div class="text-right">
+<p class="font-bold text-lg text-green-500">2.5M</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Chips</p>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-2 rounded-lg flex items-center space-x-3">
+<div class="relative">
+<img alt="AceQueen_99 avatar" class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtZ4JFBpO3y-s5ttMWVNYlHVkPKQ_M9WQ3Fl1ycudPB6ab31L4fC-u-QSh0cTTudf9Qnhbw5YD-vD3xKWnmGaOipePFxEX6_d63u2HNs5lbtzLO34wNirVg9PSuDdKd93JGMCMSuKhzM6R0IsUaLnR3wtWapHq7jdVeKm5M6CPrJBZ6ungav5InfRtwJAybDyb4OxVIF8RrA-i-Sv1w8zQQgEe8KC7bjmg95_VQrP6hsCN5Qh_Wpk20TsJXapcYBEe0kCqi8TBKLx1"/>
+<span class="absolute -top-1 -left-1 bg-slate-400 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-card-light dark:border-card-dark">2</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-gray-900 dark:text-white">AceQueen_99</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Win Rate: 82%</p>
+</div>
+<div class="text-right">
+<p class="font-bold text-lg text-green-500">1.8M</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Chips</p>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-2 rounded-lg flex items-center space-x-3">
+<div class="relative">
+<img alt="BluffMaster avatar" class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJsh2IFe_4rU5qMx3fMg2ewo-FY8B09OkX5aAn8IEiUYZsSZbGOe_wwLAHG5ExShf1rmhFbbep6HPx_iuwWvRir_UrLz1hJhs_wZD5HBSvgMQjJdOFk-7H9v-Vj4Mr0HTFFb1AsjK7xjmCiNJk4-cf3iGsLENMprfgiumg5ep6zqH9JXv40CErghjybaRPj9vZ8KcZ3ttXRVvqthD4TdlcYqNvtks_AO7h1DXEDZbIWppi2hWrhdWylyRRuGW_fSltOyDSPo49eQ1u"/>
+<span class="absolute -top-1 -left-1 bg-orange-700 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-card-light dark:border-card-dark">3</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-gray-900 dark:text-white">BluffMaster</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Win Rate: 78%</p>
+</div>
+<div class="text-right">
+<p class="font-bold text-lg text-green-500">1.2M</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Chips</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-r from-blue-900 to-teal-900 rounded-lg p-4 flex justify-between items-center">
+<div>
+<h3 class="text-lg font-bold text-white">How To Play</h3>
+<p class="text-sm text-gray-300 mt-1">Playing poker for first time?<br/>Learn now and challenge the<br/>world.</p>
+</div>
+<img alt="Playing cards" class="w-24 h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmqbhxqyYrlMf3zJJTpF8myWeZwOPnR3IDTVGXuAgeD15XbW_b4xDIixgFd4hZKgnfbZW3sjid63kHaveDU5_tfULq6FKS5m47DMLvlfDcwbxfhO4Lpp6Fy3i1bis8rVJuxL9UD1v2_OdtyMn_vPXf6XEXkcVqEIDtu2c7G3n42jJSLVg0cItUuZcHpANBOJ4XV-NTS6tfjiqGlzeLhsFdO2uiUxErS1MvK4t0AUN5GTnRvXWdYCxCMVT4DaJfVUk0i_GVAHnHZAhi"/>
+</div>
+<div class="text-center text-xs text-gray-400 dark:text-gray-500 py-4 grid grid-cols-3 gap-2 items-center">
+<div class="flex items-center justify-center space-x-1">
+<span class="material-icons text-base text-green-500">verified_user</span>
+<span>100% Secure</span>
+</div>
+<div class="flex items-center justify-center space-x-1">
+<span class="material-icons text-base text-blue-500">groups</span>
+<span>40 M+ Players</span>
+</div>
+<div class="flex items-center justify-center space-x-1">
+<span class="material-icons text-base text-purple-500">credit_card</span>
+<span>Easy Withdrawals</span>
+</div>
+</div>
+<p class="text-center text-xs text-gray-400 dark:text-gray-500 pb-4">
+                This game may be habit-forming or financially risky. Play responsibly.
+                By registering, you accept you are 18+ and agree to our T&amp;C and privacy policy
+            </p>
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 w-48 z-40">
+<div class="relative">
+<img alt="iPhone displaying game" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBMRpq-Vz1A5asVVWujMWBq6xgFWWB-pV2MqOE2kpdMlN4zWQtluSWRX0a8f_MlCBBgjYza3FcsRGppSlWZgwFc5ayfkG6KQke2lmN8jVrgBsAt6aW2_ZQwWlV75cFc6w2cc78V9P_U2tG27rX3NCWhd4L2RZySvy_YhKZpQ3sJPyGDnKyHeEIeChd72OYP3j6p8-XodjV0wmvNzhmBBj_9UdAr8gGu7rUghRqlHXgHoNw0_aBBKZlznk-3A-ef_H4AmfM4jReULiI"/>
+<button class="absolute top-1 right-1 bg-black/50 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">×</button>
+</div>
+</div>
+</main>
+<nav class="bg-card-light dark:bg-card-dark/80 backdrop-blur-sm p-2 flex justify-around items-center sticky bottom-0 border-t border-gray-200 dark:border-gray-700">
+<a class="flex flex-col items-center text-amber-500" href="#">
+<span class="material-icons">home</span>
+<span class="text-xs font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center text-gray-500 dark:text-gray-400" href="#">
+<span class="material-icons">card_giftcard</span>
+<span class="text-xs font-semibold">Free Chips</span>
+</a>
+<a class="flex flex-col items-center text-gray-500 dark:text-gray-400" href="#">
+<span class="material-icons">health_and_safety</span>
+<span class="text-xs font-semibold">Insurance</span>
+</a>
+<a class="flex flex-col items-center text-gray-500 dark:text-gray-400" href="#">
+<span class="material-icons">analytics</span>
+<span class="text-xs font-semibold">Finance</span>
+</a>
+</nav>
+</div>
+
+</body></html>
