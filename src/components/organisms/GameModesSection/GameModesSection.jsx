@@ -4,8 +4,8 @@ import Card from '../../atoms/Card';
 import Icon from '../../atoms/Icon';
 
 const GameModesSection = ({ modes, onPrivateTable }) => {
-  const tallTileHeight = '200px';
-  const shortTileHeight = '70px';
+  const tallTileHeight = '180px';
+  const shortTileHeight = '80px';
   const columnGap = '16px';
 
   const columnOneModes = modes.filter((_, index) => index % 2 === 0);
