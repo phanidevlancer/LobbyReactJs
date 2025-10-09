@@ -13,7 +13,7 @@ const LeaderboardItem = ({ position, player }) => {
         display: 'flex',
         alignItems: 'center',
         gap: '12px',
-        background: '#075063',
+        background: '#032146',
         border: '1px solid rgba(148, 163, 184, 0.08)',
       }}
     >
