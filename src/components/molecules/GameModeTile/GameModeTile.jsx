@@ -2,12 +2,20 @@ import React from 'react';
 import Card from '../../atoms/Card';
 import Icon from '../../atoms/Icon';
 
-const GameModeTile = ({ label, icon = 'image' }) => (
+const formatHeight = (height) => {
+  if (!height && height !== 0) {
+    return undefined;
+  }
+
+  return typeof height === 'number' ? `${height}px` : height;
+};
+
+const GameModeTile = ({ label, icon = 'image', height }) => (
   <Card
     padding="18px 12px"
     radius="18px"
     style={{
-      height: '116px',
+      height: formatHeight(height) || '116px',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',

@@ -38,10 +38,10 @@ const LobbyPage = () => {
         },
       ]}
       gameModes={[
-        { label: 'NLH', icon: 'stadia_controller' },
+        { label: 'NLH', icon: 'bolt' },
         { label: 'Fast NLH', icon: 'bolt' },
-        { label: 'PLO', icon: 'casino' },
-        { label: 'Tournaments', icon: 'emoji_events' },
+        { label: 'PLO', icon: 'bolt' },
+        { label: 'Tournaments', icon: 'bolt' },
       ]}
       quickStats={[
         { title: 'Current Streak', subtitle: 'Level 42', image: currentStreakGraphic, alt: 'Current streak badge', accent: 'rgba(249, 115, 22, 0.25)' },
