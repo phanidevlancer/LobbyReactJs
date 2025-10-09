@@ -12,6 +12,10 @@ import leaderboardGraphic from '../../../assets/image-35.png';
 import dailyMissionGraphic from '../../../assets/image-34.png';
 import currentStreakGraphic from '../../../assets/image-33.png';
 import leaderboardAvatar from '../../../assets/lb.png';
+import pointsRummyImage from '../../../assets/PR.png';
+import pool101Image from '../../../assets/101.png';
+import bestOfTwoImage from '../../../assets/bo2.png';
+import tournamentImage from '../../../assets/tourney.png';
 
 const LobbyPage = () => {
   const playerAvatarUrl =
@@ -38,10 +42,10 @@ const LobbyPage = () => {
         },
       ]}
       gameModes={[
-        { label: 'NLH', icon: 'bolt' },
-        { label: 'Fast NLH', icon: 'bolt' },
-        { label: 'PLO', icon: 'bolt' },
-        { label: 'Tournaments', icon: 'bolt' },
+        { label: 'Points Rummy', image: pointsRummyImage },
+        { label: '101 Pool', image: pool101Image },
+        { label: 'Best of 2 Rummy', image: bestOfTwoImage },
+        { label: 'Tournament Rummy', image: tournamentImage },
       ]}
       quickStats={[
         { title: 'Current Streak', subtitle: 'Level 42', image: currentStreakGraphic, alt: 'Current streak badge', accent: 'rgba(249, 115, 22, 0.25)' },
