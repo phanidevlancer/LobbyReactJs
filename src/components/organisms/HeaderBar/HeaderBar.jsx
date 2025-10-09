@@ -14,7 +14,7 @@ const HeaderBar = ({ player }) => (
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
-      background: '#042a33',
+      background: '#032146',
       backdropFilter: 'blur(10px)',
       border: 'none',
     }}

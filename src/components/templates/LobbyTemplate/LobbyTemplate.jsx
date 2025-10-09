@@ -54,14 +54,14 @@ const LobbyTemplate = ({
         flexDirection: 'column',
         gap: '24px',
         position: 'relative',
-        background: '#00151c',
+        background: '#080d1a',
       }}
     >
       <div
         style={{
           margin: '-24px -24px 0',
           padding: '24px 24px 18px',
-          background: '#042a33',
+          background: '#032146',
           borderBottomLeftRadius: '24px',
           borderBottomRightRadius: '24px',
           boxShadow: '0 18px 32px rgba(8, 47, 73, 0.35)',

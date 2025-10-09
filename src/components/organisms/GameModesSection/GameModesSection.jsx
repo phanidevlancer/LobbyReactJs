@@ -63,7 +63,7 @@ const GameModesSection = ({ modes, onPrivateTable }) => {
           alignItems: 'center',
           justifyContent: 'center',
           gap: '10px',
-          background: '#22474e',
+          background: '#223655',
           color: '#e2e8f0',
           fontWeight: 700,
           cursor: 'pointer',
